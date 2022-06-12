@@ -80,13 +80,13 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.php?hal=daftar_operator" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Daftar Operator</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.php?hal=tambah_operator" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Tambah Operator</p>
                     </a>
