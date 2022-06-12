@@ -10,7 +10,7 @@ $data = $koneksi->query($query);
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">
-                <button class="btn btn-success">Tambah</button>
+                <button class="btn btn-success" onclick="window.location='http://localhost/wpb_inventori/index.php?hal=tambah_barang'">Tambah</button>
             </h3>
         </div>
         <!-- /.card-header -->
