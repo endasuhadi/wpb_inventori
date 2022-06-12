@@ -1,7 +1,7 @@
 <?php
-$query = "SELECT * FROM tbl_barang where deleted_at is null order by id_barang Desc";
+$query = "SELECT * FROM tbl_barang b LEFT JOIN tbl_operator o ON b.id_operator=o.id_operator where b.deleted_at is null order by id_barang Desc";
 
-$data = $koneksi->query($query);
+$data = $koneksi->query($query)or die($koneksi->error);
 
 // print_r($data);
 ?>
@@ -38,7 +38,7 @@ $data = $koneksi->query($query);
                                 <td><?=$value['nama_barang'];?></td>
                                 <td><?=$value['harga_barang'];?></td>
                                 <td><?=$value['satuan'];?></td>
-                                <td>Admin</td>
+                                <td><?=(isset($value->nama_operator)?$value->nama_operator:'ADMIN');?></td>
                                 <td>
                                     
                                     <a href="index.php?hal=edit_barang&id=<?=$value['id_barang'];?>" class="btn btn-sm bg-gradient-primary">

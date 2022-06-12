@@ -126,13 +126,13 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.php?hal=daftar_barang_keluar" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Daftar Barang Keluar</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.php?hal=tambah_barang_keluar" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Tambah Barang Keluar</p>
                     </a>
