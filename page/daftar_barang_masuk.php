@@ -36,7 +36,7 @@ ORDER BY m.id_barang_masuk desc");
                                 <td><?=$value->kode_barang;?>-<?=$value->nama_barang;?></td>
                                 <td><?=$value->satuan;?></td>
                                 <td><?=$value->qty_masuk;?></td>
-                                <td><?=$value->nama_operator;?></td>
+                                <td>Admin</td>
                                 <td>
                                     <a href="index.php?hal=hapus_barang_masuk&id=<?=$value->id_barang_masuk;?>" class="btn btn-sm btn-danger"><i class="far fa-trash-alt"></i> Hapus</a>
                                 </td>

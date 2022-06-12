@@ -38,7 +38,7 @@ $data = $koneksi->query($query);
                                 <td><?=$value['nama_barang'];?></td>
                                 <td><?=$value['harga_barang'];?></td>
                                 <td><?=$value['satuan'];?></td>
-                                <td><?=$value['id_operator'];?></td>
+                                <td>Admin</td>
                                 <td>
                                     
                                     <a href="index.php?hal=edit_barang&id=<?=$value['id_barang'];?>" class="btn btn-sm bg-gradient-primary">
