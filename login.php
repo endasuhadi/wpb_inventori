@@ -35,6 +35,7 @@ if(isset($_SESSION['login'])){
             $username = $_POST['username'];
             $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
             $data = $koneksi->query("SELECT * from tbl_operator where username='$username'") or die($koneksi->error);
+            //pakai password verifi
             if ($data->num_rows > 0) {
                 $_SESSION["login"] = $data->fetch_assoc();
                 if(password_verify($_POST['password'], $_SESSION["login"]['password'])){
