@@ -4,7 +4,7 @@
         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
     </div>
     <div class="info">
-        <a href="#" class="d-block">Erfian Junianto</a>
+        <a href="#" class="d-block"><?=$_SESSION['login']['nama_operator'];?></a>
     </div>
 </div>
 
@@ -34,13 +34,13 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.php?hal=home" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Home</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.php?hal=profile" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Profil</p>
                     </a>
@@ -66,6 +66,12 @@
                     <a href="index.php?hal=tambah_barang" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Tambah Barang</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.php?hal=penjualan_barang_list" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Penjualan Barang</p>
                     </a>
                 </li>
             </ul>
@@ -149,19 +155,25 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.php?hal=laporan" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Laporan Harian</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.php?hal=laporan" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Laporan Bulanan</p>
                     </a>
                 </li>
             </ul>
         </li>
+        <li class="nav-item">
+                    <a href="logout.php" class="nav-link">
+                        <i class="fa fa-sign-out-alt nav-icon"></i>
+                        <p>Logout</p>
+                    </a>
+                </li>
     </ul>
 </nav>
 <!-- /.sidebar-menu -->
