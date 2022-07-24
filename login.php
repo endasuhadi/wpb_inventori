@@ -37,7 +37,12 @@ if(isset($_SESSION['login'])){
             $data = $koneksi->query("SELECT * from tbl_operator where username='$username'") or die($koneksi->error);
             if ($data->num_rows > 0) {
                 $_SESSION["login"] = $data->fetch_assoc();
+                if(password_verify($_POST['password'], $_SESSION["login"]['password'])){
+                    
                 echo "<script>alert('login berhasil'); window.location = './index.php?hal=home';</script>";
+                }else{
+                    echo "<script>alert('login gagal');</script>";
+                }
             } else {
                 echo "<script>alert('login gagal');</script>";
             }
